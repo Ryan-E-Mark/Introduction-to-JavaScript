@@ -249,8 +249,18 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(gradePercent){
+  if (gradePercent <= 100 && gradePercent >= 90){
+    return 'you got an A'
+  } else if (gradePercent <= 89 && gradePercent >= 80){
+    return 'you got a B'
+  } else if (gradePercent <= 79 && gradePercent >= 70){
+    return 'you got a C'
+  } else if (gradePercent <= 69 && gradePercent >= 60){
+    return 'you got a D'
+  } else if (gradePercent < 60){
+    return 'you got an F'
+  }
 }
 
 
